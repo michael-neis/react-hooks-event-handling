@@ -1,8 +1,8 @@
 import React from "react";
 
 function MultiButton() {
-  function handleClick(number) {
-    console.log(`Button ${number} was clicked`);
+  function handleClick(e) {
+    console.log(`${e.target.innerHTML} was clicked`);
   }
 
   return (
@@ -10,6 +10,7 @@ function MultiButton() {
       <button onClick={handleClick}>Button 1</button>
       <button onClick={handleClick}>Button 2</button>
       <button onClick={handleClick}>Button 3</button>
+      <button onClick={handleClick}>Some other button</button>
     </div>
   );
 }

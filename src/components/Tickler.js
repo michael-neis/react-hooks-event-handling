@@ -1,11 +1,8 @@
 import React from "react";
 
 function Tickler() {
-  function tickle() {
-    console.log("Teehee!");
-  }
 
-  return <button>Tickle me!</button>;
+  return <button onClick={() => console.log("DON'T TOUCH ME")}>Tickle me!</button>;
 }
 
 export default Tickler;
